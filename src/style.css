@@ -1,0 +1,160 @@
+
+.road-row {
+    height: 25px;
+    display: flex;
+    position: relative;
+}
+
+.left-edge {
+    background-color: #478550;
+    height: 100%;
+}
+
+.right-edge {
+    background-color: #478550;
+    height: 100%;
+}
+
+.road {
+    background: rgb(73,73,73);
+    background: radial-gradient(circle, rgba(73,73,73,1) 47%, rgba(60,60,60,1) 89%);
+    height: 100%;
+}
+
+.car {
+    width: auto;
+    position: absolute;
+    z-index: 5;
+    left: 45%;
+}
+
+.fieldDec {
+    width: auto;
+    position: absolute;
+}
+
+.tree {
+    content: url("./images/nature/Tree-3-4.png");
+    z-index: 3;
+}
+
+.flower {
+    content: url("./images/nature/Flower-3.png");
+    z-index: 2;
+}
+
+.stump {
+    content: url("./images/nature/Stump.png");
+    z-index: 2;
+}
+
+.road-line {
+    position: absolute;
+    z-index: 1;
+    width: 2%;
+    height: 100%;
+    margin-left: 18%;
+    background-color: gray;
+}
+
+.obstacle-car {
+    position: absolute;
+    z-index: 4;
+}
+
+.grass {
+    content: url("./images/nature/Grass-2.png");
+    z-index: 1;
+}
+
+.modal {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.6rem 3rem;
+    border: 3px solid black;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+.message {
+font-size:1.1rem;
+margin-bottom: .5rem;
+margin-top: 0;
+text-align: center;
+}
+
+.btn {
+color:inherit;
+    font-family:inherit;
+font-size: inherit;
+background: transparent;
+padding: 0.3rem 3.4rem;
+border: 3px solid black;
+margin-right: 2.6rem;
+box-shadow: 0 0 0 black;
+transition: all 0.2s;
+}
+
+.btn:last-child {
+margin: 0;
+}
+
+.btn:hover {
+box-shadow: 0.4rem 0.4rem 0 black;
+transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn:active {
+box-shadow: 0 0 0 black;
+transform: translate(0, 0);
+}
+
+.options {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.pauseBtn {
+position: absolute;
+z-index: 10;
+font-weight: bold;
+margin: 1% !important;
+}
+
+.high-score {
+position: absolute;
+z-index: 10;
+margin: 1.5% !important;
+color: white;
+left: 85%;
+font-weight: bold;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 9;
+    height: 8%;
+    width: 100%;
+}
+
+html {
+    font-size: 20px;
+}
